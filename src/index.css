@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .level-1 { @apply bg-red-100 text-red-800; }
+  .level-2 { @apply bg-orange-100 text-orange-800; }
+  .level-3 { @apply bg-yellow-100 text-yellow-800; }
+  .level-4 { @apply bg-lime-100 text-lime-800; }
+  .level-5 { @apply bg-emerald-100 text-emerald-800; }
+}
