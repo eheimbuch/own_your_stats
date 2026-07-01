@@ -50,6 +50,15 @@ SHOPS["Cardmarket (30th)"]="https://www.cardmarket.com/en/Pokemon/Expansions/30t
 # === eBay ===
 SHOPS["eBay DE (30th)"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"
 
+# === NL / Niederländische Händler ===
+SHOPS["[NL] PokeVoorraad (Preisvergleich)"]="https://pokevoorraad.nl/set/30th-celebrations/"
+SHOPS["[NL] Spellenhuis"]="https://www.spellenhuis.nl/zoeken?search=30th+celebration+pokemon"
+SHOPS["[NL] Bolt"]="https://www.bol.com/nl/nl/s/?searchtext=30th+celebration+pokemon"
+SHOPS["[NL] Intertoys"]="https://www.intertoys.nl/zoeken?q=30th+celebration+pokemon"
+SHOPS["[NL] Amazon NL"]="https://www.amazon.nl/s?k=Pokemon+30th+Celebration"
+SHOPS["[NL] Games en Zo"]="https://www.gamesenzo.nl/search?q=30th+celebration+pokemon"
+SHOPS["[NL] TCG Webwinkel"]="https://www.tcgwebwinkel.nl/search?q=30th+celebration+pokemon"
+
 # ========== CHECK-LOGIK ==========
 
 NEW_PREORDERS=false
@@ -67,13 +76,15 @@ for shop_name in "${!SHOPS[@]}"; do
   has_preorder=false
   has_soldout=false
 
-  # Preorder/Vorbestellung/Available indicators
-  if echo "$content" | grep -qiP '(vorbestellen|vorbestellung|pre.?order|pre.?order|add.to.cart|in.den.warenkorb|jetzt.kaufen|auf.lager|verfügbar|lieferbar|auf.vorrat|in.stock|jetzt.bestellen|sofort.verfügbar|sofort.käuflich|zahlungsarten|kaufen)'; then
+  # Preorder/Vorbestellung/Available indicators (DE + NL + EN)
+  if echo "$content" | grep -qiP \
+    '(vorbestellen|vorbestellung|pre.?order|add.to.cart|in.den.warenkorb|jetzt.kaufen|auf.lager|verfügbar|lieferbar|auf.vorrat|in.stock|jetzt.bestellen|sofort.verfügbar|sofort.käuflich|kaufen|kopen|bestel|bestellen|toevoegen.aan.winkelwagen|op.voorraad|beschikbaar|leverbaar|in.winkelmand|nu.kopen)'; then
     has_preorder=true
   fi
 
-  # Sold out / unavailable / coming soon indicators
-  if echo "$content" | grep -qiP '(ausverkauft|sold.out|nicht.verfügbar|coming.soon|bald.verfügbar|benachrichtigen|notify.me|out.of.stock|erscheint.am|currently.unavailable|temporär.nicht.verfügbar|derzeit.nicht.verfügbar|momentan.nicht|nicht.lieferbar|zurzeit.nicht|demnächst|nicht.auf.lager)'; then
+  # Sold out / unavailable / coming soon indicators (DE + NL + EN)
+  if echo "$content" | grep -qiP \
+    '(ausverkauft|sold.out|nicht.verfügbar|coming.soon|bald.verfügbar|benachrichtigen|notify.me|out.of.stock|erscheint.am|currently.unavailable|niet.op.voorraad|niet.beschikbaar|uitverkocht|binnenkort.beschikbaar|tijdelijk.uitverkocht|momenteel.niet|niet.leverbaar|niet.meer.beschikbaar|temporary.out.of.stock)'; then
     has_soldout=true
   fi
 
@@ -116,8 +127,10 @@ done
   echo ""
   echo "Hinweise:"
   echo "- Amazon DE/OTTO/Müller/MM/Saturn nehmen Vorbestellungen oft erst 4-6 Wochen vor Release auf"
+  echo "- NL Händler (PokeVoorraad, Bol.com, Spellenhuis) haben oft früher Vorbestellungen als DE"
   echo "- JP Vorbestellungen (Amazon JP, YONKO, Pokitrio) sind teilweise bereits möglich"
   echo "- Pokémon Center PC ETB: exklusive Variante, limitiert!"
+  echo "- PokeVoorraad.nl = Preisvergleich über 90+ NL-Shops"
 } > "$OUTPUT_FILE"
 
 cat "$OUTPUT_FILE"
