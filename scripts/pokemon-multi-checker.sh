@@ -77,19 +77,12 @@ check_set() {
 
 # ========== SET-DEFINITIONEN ==========
 
-# --- 30th Celebration (Release: 16.09.2026) ---
+# --- 30th Celebration (Release: 16.09.2026) — NUR DE/EN ---
 declare -A S30
 S30["Card-Corner DE"]="https://www.card-corner.de/pokemon-30-jahre"
 S30["Card-Corner EN"]="https://www.card-corner.de/pokemon-30th-celebration"
 S30["Feenturm DE Vorbestellung"]="https://feenturm.de/products/pokemon-tcg-30th-celebration-booster-display-de-vorbestellung"
 S30["Feenturm Ultra Premium"]="https://feenturm.de/products/pokemon-30th-celebration-ultra-premium-collection-deutsch-jetzt-vorbestellen"
-S30["YONKO TCG JP Display"]="https://yonko-tcg.de/products/jp-pokemon-display-30th-celebration-m6a"
-S30["YONKO TCG Futuristic Box"]="https://yonko-tcg.de/products/jp-pokemon-box-30th-celebration-futuristic-box"
-S30["Pokitrio JP Display"]="https://www.pokitrio.de/products/preorder-pokemon-30th-celebration-m6a-display-japanisch"
-S30["Pokemon Center US"]="https://www.pokemoncenter.com/30th-celebration/"
-S30["Pokemon Center ETB"]="https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-pokemon-center-elite-trainer-box"
-S30["Amazon JP Futuristic Box"]="https://www.amazon.co.jp/-/en/Pokemon-Card-Game-CELEBRATION-FUTURISTIC/dp/B0H4C7VPS4"
-S30["Amazon JP Booster Box"]="https://www.amazon.co.jp/-/en/dp/B0H4B79HYR"
 S30["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration"
 S30["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"
 S30["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/30th-celebrations/"
