@@ -85,6 +85,8 @@ S30["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/30th-celebration"
 S30["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration"
 S30["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"
 S30["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/30th-celebrations/"
+S30["Tabletop Dragon Vorbestellung"]="https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/vorbestellung.html"
+S30["Tabletop Dragon Displays"]="https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/booster-displays.html"
 
 # --- Pitch Black (Release: 31.07.2026) ---
 declare -A SPB
@@ -95,6 +97,8 @@ SPB["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/search?q=pitch+bla
 SPB["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+pitch+black&_sacat=220"
 SPB["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/Pitch-Black"
 SPB["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/pitch-black/"
+SPB["Tabletop Dragon Vorbestellung"]="https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/vorbestellung.html"
+SPB["Tabletop Dragon Displays"]="https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/booster-displays.html"
 
 # --- Fatale Flammen / Phantasmal Flames (erschienen 14.11.2025) ---
 declare -A SFF
