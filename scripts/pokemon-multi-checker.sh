@@ -31,20 +31,39 @@ check_set() {
     has_avail=false
     has_soldout=false
 
-    if echo "$content" | grep -qiP \
-      '(vorbestellen|vorbestellung|pre.?order|add.to.cart|in.den.warenkorb|jetzt.kaufen|auf.lager|verfügbar|lieferbar|in.stock|bestellen|kopen|bestel|op.voorraad|beschikbaar|leverbaar|in.winkelmand|nu.kopen)'; then
-      has_avail=true
+    # Verfügbarkeit (DE + NL + EN)
+    # "Vorbestellen" und "add to cart" sind stärkere Signale als "ausverkauft"
+    has_vorbestellung=false
+    has_kaufen=false
+    
+    if echo "$content" | grep -qiP '(vorbestellen|vorbestellung|pre.?order)'; then
+      has_vorbestellung=true
     fi
 
-    if echo "$content" | grep -qiP \
-      '(ausverkauft|sold.out|nicht.verfügbar|coming.soon|erscheint.am|bald.verfügbar|nicht.lieferbar|out.of.stock|niet.op.voorraad|uitverkocht|binnenkort.beschikbaar|momenteel.niet)'; then
-      has_soldout=true
+    if echo "$content" | grep -qiP '(add.to.cart|in.den.warenkorb|jetzt.kaufen|in.stock|kopen|bestel|op.voorraad|in.winkelmand|nu.kopen)'; then
+      has_kaufen=true
+    fi
+
+    has_preorder=false
+    has_soldout=false
+
+    # Vorbestellung ist das stärkste Signal
+    if $has_vorbestellung; then
+      has_preorder=true
+    elif $has_kaufen; then
+      # Nur "kaufen" ohne "vorbestellen" — check auf ausverkauft
+      if echo "$content" | grep -qiP \
+        '(ausverkauft|sold.out|nicht.verfügbar|coming.soon|erscheint.am|bald.verfügbar|nicht.lieferbar|out.of.stock|niet.op.voorraad|uitverkocht|binnenkort.beschikbaar|momenteel.niet)'; then
+        has_soldout=true
+      else
+        has_preorder=true
+      fi
     fi
 
     price=$(echo "$content" | grep -oP '(€\s*\d+[.,]?\d{2}|\$\s*\d+[.,]?\d{2})' | head -3 | tr '\n' ' | ' || echo "")
     [ -z "$price" ] && price="-"
 
-    if $has_avail && ! $has_soldout; then
+    if $has_preorder && ! $has_soldout; then
       new_found=true
       all_found+=("✅ $shop_name — $shop_url (Preis: $price)")
       all_status+=("✅ $shop_name — VORBESTELLBAR (Preis: $price)")
