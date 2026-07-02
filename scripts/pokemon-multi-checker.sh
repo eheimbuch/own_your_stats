@@ -218,6 +218,19 @@ add_cross_shops() {
 add_cross_shops S30 "30th+Celebration+Pokemon"
 add_cross_shops SPB "Pitch+Black+Pokemon"
 
+# Große DE-Händler (nur für kommende Sets — Amazon DE bereits via add_de_shops)
+add_big_retailers() {
+  local -n target=$1
+  target["Müller Spielzeug"]="https://www.mueller.de/spielzeug/pokemon/"
+  target["Smyths Toys DE"]="https://www.smythstoys.com/de/de-de/spielzeug/action-spielzeug/pok%C3%A9mon/pok%C3%A9mon-karten/c/SM1001013002"
+  target["MediaMarkt (Pokémon)"]="https://www.mediamarkt.de/de/category/pok%C3%A9mon-karten-1356075.html"
+  target["Saturn (Pokémon)"]="https://www.saturn.de/de/category/pok%C3%A9mon-karten-1356075.html"
+  target["OTTO (Pokémon Karten)"]="https://www.otto.de/suchergebnis/?q=pokemon+karten+30+jubilaeum"
+}
+
+add_big_retailers S30
+add_big_retailers SPB
+
 # ========== HAUPTLOGIK ==========
 
 {
