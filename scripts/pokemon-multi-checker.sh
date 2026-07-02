@@ -85,21 +85,22 @@ S30["Feenturm DE Vorbestellung"]="https://feenturm.de/products/pokemon-tcg-30th-
 S30["Feenturm Ultra Premium"]="https://feenturm.de/products/pokemon-30th-celebration-ultra-premium-collection-deutsch-jetzt-vorbestellen"
 S30["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration"
 S30["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"
+S30["Amazon DE Suche"]="https://www.amazon.de/s?k=Pokemon+30th+Celebration&i=toys"
+S30["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/30th-celebration"
 S30["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/30th-celebrations/"
 S30["[NL] Bol.com Suche"]="https://www.bol.com/nl/nl/s/?searchtext=30th+celebration+pokemon"
 S30["[NL] Amazon NL"]="https://www.amazon.nl/s?k=Pokemon+30th+Celebration"
 S30["[NL] Intertoys"]="https://www.intertoys.nl/zoeken?q=30th+celebration+pokemon"
 S30["[NL] Spellenhuis"]="https://www.spellenhuis.nl/zoeken?search=30th+celebration+pokemon"
 
-# --- Pitch Black (Release: 31.07.2026) ---
+# --- Pitch Black (Release: 31.07.2026) — NUR DE/EN ---
 declare -A SPB
 SPB["Card-Corner Pitch Black"]="https://www.card-corner.de/Pokemon-Pitch-Black"
 SPB["Card-Corner PB Display EN"]="https://www.card-corner.de/Pokemon-Pitch-Black-Display"
 SPB["Card-Corner PB ETB"]="https://www.card-corner.de/Pokemon-Pitch-Black-Elite-Trainer-Box"
 SPB["Feenturm Suche"]="https://feenturm.de/search?q=pitch+black+pokemon&type=product"
-SPB["YONKO TCG Suche"]="https://yonko-tcg.de/search?q=pitch+black+pokemon"
-SPB["Pokitrio Suche"]="https://www.pokitrio.de/search?q=pitch+black+pokemon"
 SPB["Amazon DE Suche"]="https://www.amazon.de/s?k=Pokemon+Pitch+Black&i=toys"
+SPB["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/search?q=pitch+black"
 SPB["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+pitch+black&_sacat=220"
 SPB["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/Pitch-Black"
 SPB["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/pitch-black/"
