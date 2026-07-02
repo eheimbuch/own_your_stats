@@ -85,8 +85,6 @@ S30["Feenturm DE Vorbestellung"]="https://feenturm.de/products/pokemon-tcg-30th-
 S30["Feenturm Ultra Premium"]="https://feenturm.de/products/pokemon-30th-celebration-ultra-premium-collection-deutsch-jetzt-vorbestellen"
 S30["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration"
 S30["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"
-S30["Amazon DE Suche"]="https://www.amazon.de/s?k=Pokemon+30th+Celebration&i=toys"
-S30["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/30th-celebration"
 S30["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/30th-celebrations/"
 S30["[NL] Bol.com Suche"]="https://www.bol.com/nl/nl/s/?searchtext=30th+celebration+pokemon"
 S30["[NL] Amazon NL"]="https://www.amazon.nl/s?k=Pokemon+30th+Celebration"
@@ -99,8 +97,6 @@ SPB["Card-Corner Pitch Black"]="https://www.card-corner.de/Pokemon-Pitch-Black"
 SPB["Card-Corner PB Display EN"]="https://www.card-corner.de/Pokemon-Pitch-Black-Display"
 SPB["Card-Corner PB ETB"]="https://www.card-corner.de/Pokemon-Pitch-Black-Elite-Trainer-Box"
 SPB["Feenturm Suche"]="https://feenturm.de/search?q=pitch+black+pokemon&type=product"
-SPB["Amazon DE Suche"]="https://www.amazon.de/s?k=Pokemon+Pitch+Black&i=toys"
-SPB["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/search?q=pitch+black"
 SPB["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+pitch+black&_sacat=220"
 SPB["Cardmarket"]="https://www.cardmarket.com/en/Pokemon/Expansions/Pitch-Black"
 SPB["[NL] PokeVoorraad"]="https://pokevoorraad.nl/set/pitch-black/"
@@ -178,6 +174,29 @@ S151["Card-Corner DE (151)"]="https://www.card-corner.de/Pokemon-151"
 S151["eBay DE"]="https://www.ebay.de/sch/i.html?_nkw=pokemon+151+booster&_sacat=220"
 S151["Cardmarket (151)"]="https://www.cardmarket.com/en/Pokemon/Expansions/151"
 S151["[NL] PokeVoorraad (151)"]="https://pokevoorraad.nl/set/151/"
+
+# ========== GENERISCHE ZUSATZ-SHOPS (für ALLE Sets) ==========
+# Amazon DE + Pokemon Center UK für JEDES Set
+add_de_shops() {
+  local -n target=$1
+  local search_term="$2"
+  local encoded="${search_term// /+}"
+  
+  target["Amazon DE Suche"]="https://www.amazon.de/s?k=${encoded}&i=toys"
+  target["Pokemon Center UK"]="https://www.pokemoncenter.com/en-gb/search?q=${encoded}"
+}
+
+add_de_shops S30 "Pokemon+30th+Celebration"
+add_de_shops SPB "Pitch+Black+Pokemon"
+add_de_shops SFF "Fatale+Flammen+Pokemon"
+add_de_shops SEH "Erhabene+Helden+Pokemon"
+add_de_shops SPE "Prismatische+Entwicklungen+Pokemon"
+add_de_shops SSF "Stürmische+Funken+Pokemon"
+add_de_shops SJT "Reisegefährten+Pokemon"
+add_de_shops SBB "Schwarze+Blitze+Pokemon"
+add_de_shops SWF "Weiße+Flammen+Pokemon"
+add_de_shops SER "Ewige+Rivalen+Pokemon"
+add_de_shops S151 "Pokemon+151+Set"
 
 # ========== NEUE GENERISCHE SHOPS (nur für TOP-Sets) ==========
 # Diese Shops werden per Such-URL nur in die wichtigsten/wertvollsten Sets eingebunden
