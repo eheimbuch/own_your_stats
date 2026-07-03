@@ -55,9 +55,10 @@ add_shop "S01_30th" "CardsRfun Collection"             "https://cardsrfun.de/col
 add_shop "S01_30th" "Pokemon Center UK"                "https://www.pokemoncenter.com/en-gb/30th-celebration"
 add_shop "S01_30th" "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration"
 add_shop "S01_30th" "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+30th+celebration&_sop=1"         "true" "30th"
-add_shop "S01_30th" "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/30th-celebrations/"
-add_shop "S01_30th" "Tabletop Dragon Vorbestellung"    "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/vorbestellung.html"   "true" "30th"
-add_shop "S01_30th" "Tabletop Dragon Displays"         "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/booster-displays.html" "true" "30th"
+add_shop "S01_30th"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/30th-celebrations/"
+add_shop "S01_30th"   "Tabletop Dragon Vorbestellung"    "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/vorbestellung.html"   "true" "30th"
+add_shop "S01_30th"   "Tabletop Dragon Displays"         "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/booster-displays.html" "true" "30th"
+add_shop "S01_30th"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+30th+celebration"
 
 # --- Pitch Black (Release: 31.07.2026) ---
 add_shop "S02_PB"   "Card-Corner Pitch Black"          "https://www.card-corner.de/Pokemon-Pitch-Black"
@@ -67,6 +68,7 @@ add_shop "S02_PB"   "Pokemon Center UK"                "https://www.pokemoncente
 add_shop "S02_PB"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+pitch+black&_sacat=220"             "true" "Pitch Black"
 add_shop "S02_PB"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Pitch-Black"
 add_shop "S02_PB"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/pitch-black/"
+add_shop "S02_PB"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+pitch+black"
 add_shop "S02_PB"   "Tabletop Dragon Vorbestellung"    "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/vorbestellung.html"   "true" "Pitch Black"
 add_shop "S02_PB"   "Tabletop Dragon Displays"         "https://www.tabletop-dragon.de/shop_de/trading-card-games/pokemon/booster-displays.html" "true" "Pitch Black"
 
@@ -76,6 +78,7 @@ add_shop "S03_FF"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S03_FF"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+fatale+flammen&_sacat=220"          "true" "Phantasmal"
 add_shop "S03_FF"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Phantasmal-Flames"
 add_shop "S03_FF"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/phantasmal-flames/"
+add_shop "S03_FF"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+fatale+flammen"
 
 # --- Erhabene Helden / Ascended Heroes (30.01.2026) ---
 add_shop "S04_EH"   "Card-Corner DE"                   "https://www.card-corner.de/pokemon-erhabene-helden"
@@ -91,6 +94,7 @@ add_shop "S05_PE"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S05_PE"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+prismatische+entwicklungen&_sacat=220" "true" "Prismatic"
 add_shop "S05_PE"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Prismatic-Evolutions"
 add_shop "S05_PE"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/prismatic-evolutions/"
+add_shop "S05_PE"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+prismatische+entwicklungen"
 
 # --- Stürmische Funken / Surging Sparks (08.11.2024) ---
 add_shop "S06_SS"   "Card-Corner DE"                   "https://www.card-corner.de/stuermische-funken-und-surging-sparks"
@@ -98,6 +102,7 @@ add_shop "S06_SS"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S06_SS"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+st%C3%BCrmische+funken&_sacat=220" "true" "Surging Sparks"
 add_shop "S06_SS"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Surging-Sparks"
 add_shop "S06_SS"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/surging-sparks/"
+add_shop "S06_SS"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+st%C3%BCrmische+funken"
 
 # --- Reisegefährten / Journey Together (28.03.2025) ---
 add_shop "S07_JT"   "Card-Corner DE"                   "https://www.card-corner.de/reisegefaehrten-journey-together-blog"
@@ -105,6 +110,7 @@ add_shop "S07_JT"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S07_JT"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+reisegef%C3%A4hrten&_sacat=220"   "true" "Journey"
 add_shop "S07_JT"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Journey-Together"
 add_shop "S07_JT"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/journey-together/"
+add_shop "S07_JT"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+reisegef%C3%A4hrten"
 
 # --- Schwarze Blitze / Black Bolt (18.07.2025) ---
 add_shop "S08_BB"   "Card-Corner DE"                   "https://www.card-corner.de/pokemon-schwarze-blitze"
@@ -112,6 +118,7 @@ add_shop "S08_BB"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S08_BB"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+schwarze+blitze&_sacat=220"        "true" "Black Bolt"
 add_shop "S08_BB"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Black-Bolt"
 add_shop "S08_BB"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/black-bolt/"
+add_shop "S08_BB"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+schwarze+blitze"
 
 # --- Weiße Flammen / White Flare (18.07.2025) ---
 add_shop "S09_WF"   "Card-Corner DE"                   "https://www.card-corner.de/pokemon-weisse-flammen"
@@ -119,6 +126,7 @@ add_shop "S09_WF"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S09_WF"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+wei%C3%9Fe+flammen&_sacat=220"    "true" "White Flare"
 add_shop "S09_WF"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/White-Flare"
 add_shop "S09_WF"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/white-flare/"
+add_shop "S09_WF"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+wei%C3%9Fe+flammen"
 
 # --- Ewige Rivalen / Destined Rivals (30.05.2025) ---
 add_shop "S10_ER"   "Card-Corner DE"                   "https://www.card-corner.de/pokemon-ewige-rivalen"
@@ -126,12 +134,14 @@ add_shop "S10_ER"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S10_ER"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+ewige+rivalen&_sacat=220"          "true" "Destined"
 add_shop "S10_ER"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Destined-Rivals"
 add_shop "S10_ER"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/destined-rivals/"
+add_shop "S10_ER"   "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+ewige+rivalen"
 
 # --- Pokemon 151 (22.09.2023) ---
 add_shop "S11_151"  "Card-Corner DE"                   "https://www.card-corner.de/Pokemon-151"
 add_shop "S11_151"  "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+151+booster&_sacat=220"            "true" "151"
 add_shop "S11_151"  "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/151"
 add_shop "S11_151"  "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/151/"
+add_shop "S11_151"  "Netto (Angebot)"                  "https://www.mydealz.de/search?q=netto+pokemon+151"
 
 # =============================================================================
 # PHASE 1: curl-Config generieren & alle URLs PARALLEL fetchen
