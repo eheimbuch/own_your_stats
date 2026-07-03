@@ -83,6 +83,7 @@ add_shop "S04_EH"   "Card-Corner EN"                   "https://www.card-corner.
 add_shop "S04_EH"   "eBay DE"                          "https://www.ebay.de/sch/i.html?_nkw=pokemon+erhabene+helden&_sacat=220"         "true" "Ascended"
 add_shop "S04_EH"   "Cardmarket"                       "https://www.cardmarket.com/en/Pokemon/Expansions/Ascended-Heroes"
 add_shop "S04_EH"   "[NL] PokeVoorraad"                "https://pokevoorraad.nl/set/ascended-heroes/"
+add_shop "S04_EH"   "Netto (Angebot)"                "https://www.mydealz.de/search?q=netto+pokemon+erhabene+helden"
 
 # --- Prismatische Entwicklungen / Prismatic Evolutions (17.01.2025) ---
 add_shop "S05_PE"   "Card-Corner DE"                   "https://www.card-corner.de/Prismatische-Entwicklungen-und-Prismatic-Evolutions"
