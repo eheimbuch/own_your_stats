@@ -185,14 +185,20 @@ analyse_page() {
   # Keywords
   local soldout=false preorder=false buynow=false coming=false
 
-  printf '%s' "$c" | grep -qiP '(ausverkauft|sold[\s\-]?out|out[\s\-]of[\s\-]stock|nicht\s+lieferbar|niet\s+op\s+voorraad|uitverkocht|momenteel\s+niet\s+beschikbaar|nicht\s+verfügbar|vergriffen|nicht\s+auf\s+lager|out\s+of\s+stock|currently\s+unavailable|notification\s+only)' 2>/dev/null && soldout=true || true
-  printf '%s' "$c" | grep -qiP '(vorbestellen|jetzt\s+vorbestellen|pre[\-\s]?order\s+now|pre[\-\s]?order\s+here|preorder\s+now|nu\s+pre[\-\s]?order|preorder\s+yours|order\s+now\s+for\s+release|reserve\s+yours|add\s+to\s+cart|in\s+den\s+warenkorb|jetzt\s+kaufen|buy\s+now|in\s+winkelmand|nu\s+kopen|op\s+voorraad|bestel\s+nu|sofort\s+lieferbar|sofort\s+verfügbar|add\s+to\s+basket|in\s+stock|available\s+now)' 2>/dev/null && preorder=true || true
-  printf '%s' "$c" | grep -qiP '(coming\s+soon|erscheint\s+am\s+\d|bald\s+verfügbar|binnenkort\s+beschikbaar|noch\s+nicht\s+erschienen|demnächst\s+verfügbar)' 2>/dev/null && coming=true || true
+  printf '%s' "$c" | grep -qiP '(ausverkauft|sold[\s\-]?out|out[\s\-]of[\s\-]stock|nicht\s+lieferbar|niet\s+op\s+voorraad|uitverkocht|momenteel\s+niet\s+beschikbaar|nicht\s+verfügbar|vergriffen|nicht\s+auf\s+lager|out\s+of\s+stock|currently\s+unavailable|notification\s+only|bald\s+vorbestellbar|bald\s+verfügbar|demnächst|coming\s+soon|erscheint\s+am)' 2>/dev/null && soldout=true || true
 
-  if $preorder && ! $soldout; then
-    echo "PREORDER|$(extract_price "$c")"
-  elif $buynow && ! $soldout; then
+  # Preorder/Verfügbar — nur wenn Seite NICHT "ausverkauft" signalisiert
+  # Strengere Prüfung: echte Kauf-Aktionen vom reinen "vorbestellbar"-Text trennen
+  if ! $soldout; then
+    printf '%s' "$c" | grep -qiP '(in\s+den\s+warenkorb|add\s+to\s+cart|add\s+to\s+basket|jetzt\s+kaufen|buy\s+now|in\s+winkelmand|nu\s+kopen|bestel\s+nu|sofort\s+lieferbar|sofort\s+verfügbar|in\s+stock|available\s+now|op\s+voorraad|auf\s+lager|verfügbar\s+auf\s+lager)' 2>/dev/null && buynow=true || true
+
+    printf '%s' "$c" | grep -qiP '(vorbestellen|jetzt\s+vorbestellen|pre[\-\s]?order\s+now|pre[\-\s]?order\s+here|preorder\s+now|nu\s+pre[\-\s]?order|preorder\s+yours|order\s+now\s+for\s+release|reserve\s+yours|vorbestellbar|preorder\s+yours\s+now)' 2>/dev/null && preorder=true || true
+  fi
+
+  if $buynow && ! $soldout; then
     echo "AVAILABLE|$(extract_price "$c")"
+  elif $preorder && ! $soldout; then
+    echo "PREORDER|$(extract_price "$c")"
   elif $soldout || $coming; then
     echo "SOLDOUT"
   else
