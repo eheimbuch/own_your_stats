@@ -48,7 +48,6 @@ add_shop "30TH" "PHD Games"                          "https://www.phdgames.com/?
 add_shop "30TH" "Pokitrio DE"                        "https://www.pokitrio.de/collections/30th-celebration"
 add_shop "30TH" "YONKO TCG (DE)"                     "https://yonko-tcg.de/collections/30th-celebration"
 add_shop "30TH" "YONKO TCG JP Display"               "https://yonko-tcg.de/products/jp-pokemon-display-30th-celebration-m6a"
-add_shop "30TH" "TCG Love"                           "https://tcg-love.de/produkt-kategorie/pokemon/30th-celebration/"
 add_shop "30TH" "Universe TCG (EU)"                  "https://www.universetcg.com/collections/pokemon-30th-celebration"
 
 # --- Internationale Direkt-Shops ---
